@@ -1,0 +1,125 @@
+{
+	"QMainWindow":[
+		{
+			"tittle":"PFE PROJECT",
+			"icon":"icons/camera.svg",
+			"frameless": true,
+			"transluscentBg": true,
+			"sizeGrip": "",
+			"navigation":[
+				{
+					"minimize":"minimizeBtn",
+					"close": "closeBtn",
+					"restore":[
+						{	
+							"buttonName": "restoreBtn",
+							"normalIcon": "icons/square.svg",
+							"maximizedIcon": "icons/copy.svg"
+						}
+					],
+					"moveWindow": "headerContainer",
+					"tittleBar": "headerContainer"
+				}
+			]
+		}
+	],
+    "QCustomSlideMenu": [
+        {
+            "name": "leftMenuContainer",
+            "defaultSize": [{
+                "width": 45,
+                "height": "parent"
+            }],
+            "collapsedSize": [{
+                "width": 45,
+                "height": "parent"
+            }],
+            "expandedSize": [{
+                "width": 205,
+                "height": "parent"
+            }],
+            "toggleButton": [{
+                "buttonName": "menuBtn",
+                "icons": [{
+                    "whenMenuIsCollapsed": "icons/menu.svg",
+                    "whenMenuIsExpanded": "icons/chevron-left.svg"
+                }]
+            }],
+            "menuTransitionAnimation": [{
+                "animationDuration": 500,
+                "animationEasingCurve": "Linear"
+            }]
+	    },
+        {
+            "name": "popupNotificationContainer",
+            "defaultSize": [{
+                "width": 0,
+                "height": "auto"
+            }],
+            "collapsedSize": [{
+                "width": 0,
+                "height": "auto"
+            }],
+            "expandedSize": [{
+                "width": 700,
+                "height": 140
+            }],
+            "menuTransitionAnimation": [{
+                "animationDuration": 500,
+                "animationEasingCurve": "Linear"
+            }],
+            "floatPosition": [
+                {
+                    "relativeTo": "centralwidget",
+                    "position": "bottom-right",
+                    "shadow":[
+                        {
+                            "color": "#000",
+                            "blurRadius": 20,
+                            "xOffset": 0,
+                            "yOffset": 0
+                        }
+                    ]
+                }
+            ],
+            "toggleButton": [{
+                "buttonName": "notificationBtn"
+            }]
+	    }
+    ],
+    "QStackedWidget":[
+		{
+			"name":"mainPages",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"homeBtn": "page_3",
+							"databaseBtn": "page_4",
+                            "addpersonBtn": "page_5",
+                            "infoBtn": "page",
+							"helpBtn": "page_2"
+						}
+					]
+				}
+			]
+		}
+	],
+    "QPushButtonGroup": [
+        {
+            "Buttons": [
+                "homeBtn",
+                "databaseBtn",
+                "addpersonBtn",
+                "infoBtn",
+                "helpBtn"
+            ],
+            "Style":[
+                {
+                    "Active": "background-color: rgb(211, 211, 211); font-size: 18px;",
+                    "NotActive": "font-size: 18px;"
+                }
+            ]
+        }
+    ]
+}
